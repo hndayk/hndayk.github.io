@@ -1,0 +1,374 @@
+@charset "utf-8";
+
+body {
+	font-family: "游ゴシック medium", "Yu Gothic medium","游ゴシック体",YuGothic,"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",Meiryo, "メイリオ", sans-serif;
+	color: black;
+	background: #6D831A;
+}
+#container {
+	margin: 0 auto;
+	width: 98%;
+	background-color: #FFF;
+}
+img,video {
+    max-width: 100%;
+    height: auto;
+    vertical-align: bottom;
+}
+header {
+    width: 100%;
+}
+.matome {
+    display: flex;
+    
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.ue {
+    width: 35%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  //  padding: 10px 0 0 1%;
+}
+.ue section img {
+    margin-top: 10px;
+    padding-bottom: 10px;
+}
+.ue .tenmei {
+color: #0C392D;
+margin-top: 45px;
+text-align: center;
+font-size: 1.2rem;
+padding-left: 2%;
+}
+.yoko {
+    width: 60%;
+}
+.yoko {
+    justify-content: space-around;
+    margin-top: 45px;
+}
+.yoko nav {
+    text-align: center;
+}
+   .yoko nav ul{
+    margin: 0 auto;
+}
+   .yoko nav li{
+    list-style: none;
+    display: inline-block;
+    width: 14%;
+    min-width: 90px;
+    font-size: 1rem;
+    }
+    nav li:not(:last-child){
+    border-right:6px solid #6D831A;
+    }
+   .yoko nav a{
+    text-decoration: none;
+    color: #0C392D;
+    }
+   .yoko nav a:hover{
+    color: #6D831A;
+}
+nav li{
+list-style: none;
+display: inline-block;
+}
+nav li:not(:last-child){
+border-right:2px solid silver;
+height: 20px;
+}
+nav a{
+text-decoration: none;
+color: #0C392D;
+}
+nav a:hover{
+color:#0C392D;
+border-bottom:2px solid #6D831A;
+}
+
+
+
+.top {
+    width: 100%;
+    margin: 0 auto;
+    background: #0C392D;
+    text-align: center;
+    padding: 50px 0;
+    margin-bottom: 50px;
+}
+
+.top p {
+    margin: 0 auto;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #FFF;
+    text-align: center;
+    line-height: 0.5;
+}
+.top p a {
+    margin: 0 auto;
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+main {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+main h2 {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+main p {
+    font-size: 1rem;
+    line-height: 1rem;
+    margin-bottom: 50px;
+}
+.Form {
+    margin-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 720px;
+    text-align: left;
+  }
+
+  .Form {
+    margin-top: 40px;
+  }
+
+.Form-Item {
+  border-top: 1px solid #ddd;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.Form-Item {
+    padding: 16px 1%;
+    flex-wrap: wrap;
+  }
+
+.Form-Item:nth-child(4) {
+  border-bottom: 1px solid #ddd;
+}
+.Form-Item-Label {
+  width: 100%;
+  max-width: 248px;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+@media screen and (max-width: 480px) {
+  .Form-Item-Label {
+    max-width: inherit;
+    display: flex;
+    align-items: left;
+    font-size: 12px;
+  }
+}
+.Form-Item-Label.isMsg {
+  margin-top: 10px;
+  margin-bottom: auto;
+}
+@media screen and (max-width: 480px) {
+  .Form-Item-Label.isMsg {
+    margin-top: 0;
+  }
+}
+.Form-Item-Label-Required {
+  border-radius: 6px;
+  margin-right: 5%;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  width: 20%;
+  display: inline-block;
+  text-align: center;
+  background: #6D831A;
+  color: #fff;
+  font-size: 0.8rem;
+}
+@media screen and (max-width: 480px) {
+  .Form-Item-Label-Required {
+    border-radius: 4px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    width: 10%;
+    font-size: 10px;
+  }
+}
+.Form-Item-Input {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  margin-left: 40px;
+  padding-left: 1em;
+  padding-right: 1em;
+  height: 48px;
+  flex: 1;
+  width: 100%;
+  max-width: 410px;
+  background: #eaedf2;
+  font-size: 18px;
+}
+@media screen and (max-width: 480px) {
+  .Form-Item-Input {
+    margin-left: 0;
+    margin-top: 18px;
+    height: 40px;
+    flex: inherit;
+    font-size: 15px;
+  }
+}
+.Form-Item-Textarea {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  margin-left: 40px;
+  padding:0 2%;
+  height: 216px;
+  flex: 1;
+  width: 100%;
+ // max-width: 410px;
+  background: #eaedf2;
+  font-size: 1.1rem;
+}
+@media screen and (max-width: 480px) {
+  .Form-Item-Textarea {
+    margin-top: 18px;
+    margin-left: 0;
+ //   height: 200px;
+    flex: inherit;
+    font-size: 15px;
+  }
+}
+.Form-Btn {
+  border-radius: 6px;
+  margin-top: 32px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 20%;
+  display: block;
+  letter-spacing: 0.05em;
+  background: #0C392D;
+  color: #fff;
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+@media screen and (max-width: 480px) {
+  .Form-Btn {
+    margin-top: 24px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    width: 160px;
+    font-size: 16px;
+  }
+}
+
+/* トップに戻るボタン */
+
+.pagetop {
+    display: block;
+    position: fixed;
+    bottom: 30px;
+    right: 40px;
+}
+
+.pagetop a {
+	display: block;
+	padding: 10px 10px;
+	border-radius: 10px;
+}
+
+footer {
+    margin: 0 auto;
+	width: 100%;
+	background:#0C392D;
+	color: #FFF;
+}
+footer .f_block {
+	font-size: 0.8rem;
+    margin-top: 5px;
+    padding: 5px 0 25px 0;
+}
+footer .sanoliva {
+    display: flex;
+    width: 95%;
+    justify-content: space-around;
+    height: 90px;
+    padding-top: 10px;
+    text-align: center;
+    margin-left: 0;
+    padding-left: 2%;
+}
+.sanoliva .migi {
+    
+    width: 45%;
+    margin:0 auto;
+    height: 90px;
+    padding-top: 7px;
+    margin-left: 0;
+    padding-left: 20%;
+}
+.sanoliva ul {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+}
+.sanoliva p {
+    text-align: center;
+    margin: 10px;
+    font-size: 0.9rem;
+}
+.migi .sanoliva02 a{
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+footer ul li a {
+    color:#FFF;
+    }
+
+    footer ul li a:hover {
+ 
+        color:#6D831A;
+        }
+  /*--------menu-hanbaga--------*/
+
+
+  @media screen and (max-width: 1024px){
+    .yoko {
+        width: 90%;
+        margin-top: 15px;
+    }
+    .ue .tenmei {
+        margin-top: 10px;
+        }
+  }
+  
+@media screen and (max-width: 768px){
+    .yoko {
+        width: 100%;
+    }
+    .ue {
+        width: 50%;
+    }
+    .tenmei {
+        width: 100%;
+    }
+    .news h2 {
+        font-size: 1.2rem;
+    }
+    
+    .sanoliva .migi {
+        width: 55%;
+        padding-left: 10%;
+    }
+    }

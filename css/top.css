@@ -1,0 +1,638 @@
+@charset "utf-8";
+
+body {
+	font-family: "游ゴシック medium", "Yu Gothic medium","游ゴシック体",YuGothic,"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",Meiryo, "メイリオ", sans-serif;
+	color: black;
+	background: #6D831A;
+}
+#container {
+	margin: 0 auto;
+	width: 98%;
+	background-color: #FFF;
+}
+img,video {
+    max-width: 100%;
+    height: auto;
+    vertical-align: bottom;
+}
+header {
+    width: 100%;
+}
+.matome {
+    display: flex;
+    
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.ue {
+    width: 35%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  //  padding: 10px 0 0 1%;
+}
+.ue section img {
+    margin-top: 10px;
+    padding-bottom: 10px;
+}
+.ue .tenmei {
+color: #0C392D;
+margin-top: 45px;
+text-align: center;
+font-size: 1.2rem;
+padding-left: 2%;
+}
+
+.drawerBt {
+    display: none;
+}
+
+.yoko {
+    width: 60%;
+    justify-content: space-around;
+    margin-top: 45px;
+}
+.yoko nav {
+    text-align: center;
+}
+   .yoko nav ul{
+    margin: 0 auto;
+}
+   .yoko nav li{
+    list-style: none;
+    display: inline-block;
+    width: 14%;
+    min-width: 90px;
+    font-size: 1rem;
+    }
+    nav li:not(:last-child){
+    border-right:6px solid #6D831A;
+    }
+   .yoko nav a{
+    text-decoration: none;
+    color: #0C392D;
+    }
+   .yoko nav a:hover{
+    color: #6D831A;
+}
+nav li{
+list-style: none;
+display: inline-block;
+}
+nav li:not(:last-child){
+border-right:2px solid silver;
+height: 20px;
+}
+nav a{
+text-decoration: none;
+color: #0C392D;
+}
+nav a:hover{
+color:#0C392D;
+border-bottom:2px solid #6D831A;
+}
+
+.demo #slider1 img {
+    width: 100%;
+    
+    margin: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+main {
+    width: 100%;
+    margin: 0 auto;
+}
+main .news {
+    margin: -20px 0 0 0;
+    display: flex;
+    background: #7EA59A;
+    padding: 10px;
+}
+.news h2 {
+    width: 100%;
+    font-size: 1.8rem;
+    font-weight: bold;
+margin: 45px 0 0 80%;
+}
+.naiyou {
+    margin-left: 10%;
+    font-size: 1rem;
+    width: 100%;
+}
+.naiyou dl {
+    display: flex;
+    padding: 10px 2%;
+}
+.naiyou dd {
+    width: 60%;
+    margin-left: 10%;
+}
+.syouhin, .yoko03, .main__box02 {
+    width: 97%;
+    margin: 40px auto;
+}
+.syouhin h2, .yoko03 h2, .main__box02 h2 {
+    font-size: 1.4rem;
+font-weight: bold;
+border-left: solid 6px #0C392D;
+padding-left: 10px;
+margin: 80px auto 50px auto;
+}
+.syouhin a, .yoko03 a, .yoko04 a, .yoko05 a {
+font-size: 1rem;
+}
+.yoko02 section {
+    margin: 20px 2% 10px 2%;
+}
+.yoko02 p, .yoko03 p {
+    margin-top: 10px;
+    line-height: 1.5rem;
+    text-align: center;
+    font-size: 0.8rem;
+}
+.yoko04 p, .yoko05 p {
+    line-height: 1.5rem;
+    text-align: left;
+    font-size: 0.8rem;
+    margin-right: 5%;
+}
+.yoko02 {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.main__box {
+    display: flex;
+    justify-content: flex-start;
+    margin: 0 0;
+    padding: 0 0;
+}
+.main__box02 {
+    display: flex;
+    justify-content: flex-start;
+    margin: 0 auto;
+}
+.main__box section, .main__box02 section {
+    width: 100%;
+    display: flex;
+   // justify-content: space-between;
+   margin: 20px;
+}
+.main__box img, .main__box02 img {
+    width: fit-content;
+    margin-right: 0;
+}
+.main__box p {
+    width: 90%;
+    padding-left: 3%;
+}
+.main__box02 p {
+    width: 50%;
+  margin-left: 3%;
+}
+
+.main__box02 p a {
+    border-bottom: 2px solid #6D831A;
+    margin-top: 30px;
+float: right;
+}
+.yoko04 a, .yoko05 a{
+    text-decoration: none;
+    color: black;
+    }
+.yoko04 a:hover, .yoko05 a:hover, .read a:hover {
+    color: #6D831A;
+}
+
+
+.yoko04 {
+    width: 50%;
+}
+
+.read {
+    border-bottom: 2px solid #6D831A;
+float: right;
+text-decoration: none;
+margin-right: 3%;
+}
+.read a {
+    text-decoration: none;
+    color: black;
+}
+
+/* 画面のポップ動作 */
+main section img {
+	transition-duration: 0.4s;
+}
+main section img:hover {
+	transform:scale(1.3,1.3);
+}
+
+/* トップに戻るボタン */
+
+.pagetop {
+    display: block;
+    position: fixed;
+    bottom: 30px;
+    right: 40px;
+}
+
+.pagetop a {
+	display: block;
+	padding: 10px 10px;
+	border-radius: 10px;
+}
+
+footer {
+    margin: 0 auto;
+	width: 100%;
+	background:#0C392D;
+	color: #FFF;
+    
+}
+footer .f_block {
+	font-size: 0.8rem;
+    margin-top: 5px;
+    padding: 5px 0 25px 0;
+}
+footer .sanoliva {
+    display: flex;
+    width: 95%;
+    justify-content: space-around;
+    height: 90px;
+    padding-top: 10px;
+    text-align: center;
+    margin-left: 0;
+    padding-left: 2%;
+}
+.sanoliva .migi {
+    
+    width: 45%;
+    margin:0 auto;
+    height: 90px;
+    padding-top: 7px;
+    margin-left: 0;
+    padding-left: 20%;
+}
+.sanoliva ul {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+}
+.sanoliva p {
+    text-align: center;
+    margin: 10px;
+    font-size: 0.9rem;
+}
+.migi .sanoliva02 a{
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+footer ul li a {
+    color:#FFF;
+    }
+
+    footer ul li a:hover {
+ 
+        color:#6D831A;
+        }
+ 
+
+@media screen and (max-width: 1025px){
+    .yoko {
+        width: 90%;
+        margin-top: 15px;
+    }
+    .ue .tenmei {
+        margin-top: 10px;
+        }
+  }
+  
+  
+@media screen and (max-width: 769px){
+    .yoko {
+        width: 100%;
+    }
+.ue {
+    width: 50%;
+}
+.tenmei {
+    width: 100%;
+}
+
+.syouhin h2, .yoko03 h2, .main__box02 h2 {
+    font-size: 1rem;
+padding-left: 10px;
+margin: 20px auto 10px auto;
+}
+.news h2 {
+    font-size: 1.2rem;
+}
+.main__box, .main__box02 {
+    flex-direction: column;
+}
+
+.yoko02 {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+.yoko02 section {
+   width: 40%; 
+}
+.yoko04 {
+    width: 100%;
+}
+.sanoliva .migi {
+    width: 55%;
+    padding-left: 10%;
+}
+
+}
+@media screen and (max-width: 651px){
+    .drawerBg {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        z-index: 999;
+        background-color: rgba(100, 100, 100, 0.3);
+        display: none;
+        top: 0;
+        left: 0;
+    }
+    
+    .drawerBt {
+        display: block;
+        background: none;
+        border: none;
+        padding: 0;
+        width: 42px;
+        letter-spacing: 1em;
+        cursor: pointer;
+        position: fixed;
+        right: 4%;
+        z-index: 9999;
+        text-align: center;
+        outline: none;
+    }
+    
+    .drawerBt.active .drawerBar {
+        width: 49px;
+    }
+    
+    .drawerBt.active .drawerBar1 {
+        transform: rotate(30deg);
+    }
+    
+    .drawerBt.active .drawerBar2 {
+        opacity: 0;
+    }
+    
+    .drawerBt.active .drawerBar3 {
+        transform: rotate(-30deg);
+    }
+    
+    .drawerBt.active .drawerMenuText {
+        display: none;
+    }
+    
+    .drawerBt.active .drawerClose {
+        display: block;
+    }
+    
+    .drawerBar {
+        display: block;
+        height: 2px;
+        margin: 10px 0;
+        transition: all 0.2s; /*表示の遅延効果*/
+        transform-origin: 0 0;
+    }
+    
+    .drawerText {
+        text-align: center;
+        font-size: 10px;
+        
+    }
+    
+    .drawerClose {
+        letter-spacing: 0.08em;
+        display: none;
+    }
+    
+    .drawerMenuText {
+        display: block;
+    }
+    
+    /*navの設定*/
+    
+    .dNavWrapper {
+        width: 40%; /*右側に300px隠している*/
+        margin: 0;
+        transition: all 0.2s;
+        transform: translate(220px); /*クリックすると-300pxされる、ちょうどよりも少し大きめに設定するとバグが発生しずらい*/
+        position: fixed;
+        right: 0;
+        z-index: 1000;
+        background-color: rgba(250, 250, 250, 0.6);
+    }
+    
+    .dNavWrapper.open {
+        transform: translate(0); /*オープンしてる状態は0じゃないと表示されない*/
+    }
+    
+    /*+++ Default Navigation CSS +++*/
+    
+    .dNav {
+        padding: 40px 0;
+        background: none;
+        line-height: 3rem;
+    }
+    
+    .dNav li {
+        width:100%;
+        font-size: 0.7rem;
+        line-height: 2rem;
+        border:none;
+        font-weight: bold;
+    }
+    
+    .drawerBt {
+        background-color: #fff;
+        width: 43px;
+        padding: 5px;
+        
+    }
+    
+    .drawerBar {
+        background-color: #000;
+    }
+}
+@media screen and (max-width: 426px){
+
+.yoko {
+    margin-top: 10px;
+}
+   .yoko nav li{
+    font-size: 0.7rem;
+    }
+    nav li:not(:last-child){
+    border-right:none;
+    }
+nav li:not(:last-child){
+border-right: none;
+}
+
+.matome {
+    width: 100%;
+    flex-direction: column;
+}
+.matome .ue {
+    width: 70%;
+}
+.ue section img {
+    display: none;
+}
+.ue .tenmei {
+display: inline-block;
+font-size: 0.9rem;
+margin: 20px 5% 15px 0;
+}
+
+main .news {
+    vertical-align: top;
+}
+
+.news h2 {
+    width: 100%;
+    font-size: 1.2rem;
+    font-weight: bold;
+margin: 30px 0 0 5%;
+}
+
+.naiyou {
+    margin-left: 10%;
+    font-size: 0.7rem;
+}
+
+.naiyou dl {
+    padding: 5px 2%;
+}
+
+.yoko02 p, .yoko03 p {
+    line-height: 1rem;
+    text-align: center;
+    font-size: 0.7rem;
+}
+.yoko04 p, .yoko05 p {
+    line-height: 1rem;
+    font-size: 0.8rem;
+}
+.yoko02 {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+.yoko02 section {
+   width: 40%; 
+}
+.syouhin h2, .yoko03 h2, .main__box02 h2 {
+    font-size: 1rem;
+margin-top: 30px;
+}
+
+
+/*footer*/
+
+
+footer .f_block {
+	font-size: 0.5rem;
+}
+footer .sanoliva {
+    height: 50px;
+}
+footer img {
+    width: 70%;
+}
+
+.sanoliva .migi {
+    width: 80%;
+    height: 50px;
+}
+.sanoliva ul {
+    font-size: 0.5rem;
+}
+.sanoliva p {
+    margin: 5px;
+    font-size: 0.5rem;
+}
+.migi .sanoliva02 a{
+    font-size: 0.5rem;
+    font-weight: 400;
+}
+
+.pagetop {
+    bottom: 5px;
+    right: 10px;
+}
+
+.pagetop a {
+	padding: 5px 5px;
+}
+} 
+@media screen and (max-width: 321px){
+    .yoko03 {
+        padding-top: 10px;
+    }
+    .yoko03 section {
+        margin: 0 auto;
+        flex-direction: column;
+    }
+    .read {
+        
+    border-bottom: none;
+    }
+    .read a {
+        font-size: 0.5rem;
+    }
+    .main__box02 {
+        width: 90%;
+        margin: 0 auto;
+        flex-direction: column;
+    }
+    .yoko04 section, .yoko05 section {
+        flex-direction: column;
+    }
+    .yoko04 a, .yoko05 a {
+        font-size: 0.5rem;
+    }
+    
+.main__box02 p {
+    width: fit-content;
+  margin-left: 0;
+}
+
+.main__box02 p a {
+    border-bottom: none;
+   margin-top: 0;
+}
+footer img {
+    width: 50%;
+    margin-top: 10px;
+}
+
+.sanoliva .migi {
+    padding-left: 0;
+}
+.sanoliva ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+.migi ul li {
+    width: calc(100%/3);
+}
+
+}
