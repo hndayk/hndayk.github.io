@@ -20,7 +20,7 @@ header {
 }
 
 .drawerBt {
-    display: none;
+   // display: none;
 }
 
 .matome {
@@ -279,9 +279,10 @@ h2 {
     font-size: 2.5rem;
     padding-top: 0;
 }
+
 @media screen and (max-width: 651px){
     .yoko nav ul {
-        display: none;
+        display: display;
     }
     .table {
       margin-top: 15px;
@@ -495,7 +496,6 @@ footer img {
         padding: 10px 0;
         margin-bottom: 10px;
     }
-    
     .yoko03 {
         padding-top: 10px;
     }

@@ -278,7 +278,7 @@ main p {
     font-size: 0.8rem;
 }
   .yoko nav ul {
-      display: none;
+      display: block;
   }
   .drawerBg {
       width: 100%;

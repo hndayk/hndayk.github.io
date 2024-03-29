@@ -338,6 +338,11 @@ font-size: 0.8rem;
 }
 
 @media screen and (max-width: 651px){
+    
+    .yoko nav ul {
+        display: block;
+    }
+    
     .drawerBg {
         width: 100%;
         height: 100%;
